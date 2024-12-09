@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-demo-v2.example.com
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: docker-demo-v2
+    image: codingspecialist/docker-demo-v2
+    ports:
+    - containerPort: 3000
